@@ -1,7 +1,1 @@
-const { contextBridge, ipcRenderer } = require("electron");
-
-contextBridge.exposeInMainWorld("electronAPI", {
-  selectFolder: () => ipcRenderer.invoke("dialog:openDirectory"),
-  parseTakeoutData: (folderPath) =>
-    ipcRenderer.invoke("takeout:parse", folderPath),
-});
+const { contextBridge, ipcRenderer } = require(\"electron\");\n\ncontextBridge.exposeInMainWorld(\"electronAPI\", {\n  selectFolder: () => ipcRenderer.invoke(\"dialog:openDirectory\"),\n  parseTakeoutData: (folderPath) =>\n    ipcRenderer.invoke(\"takeout:parse\", folderPath),\n  getVideos: () => ipcRenderer.invoke(\"database:getVideos\"),\n  getPlaylists: () => ipcRenderer.invoke(\"database:getPlaylists\"),\n  getStatistics: () => ipcRenderer.invoke(\"database:getStatistics\"),\n  exportData: (type, dataType, videos, playlists) =>\n    ipcRenderer.invoke(\"export:data\", type, dataType, videos, playlists),\n});\n
