@@ -1,0 +1,98 @@
+.sidebar {
+  width: 280px;
+  background-color: #1f2937;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #374151;
+}
+
+.sidebar-header h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.load-button {
+  margin: 20px;
+  background-color: #ef4444;
+  padding: 12px 16px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.load-button:hover {
+  background-color: #dc2626;
+}
+
+.navigation {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.nav-section {
+  padding: 16px 8px;
+  border-bottom: 1px solid #374151;
+}
+
+.nav-section h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #9ca3af;
+  padding: 0 12px 12px 12px;
+  text-transform: uppercase;
+}
+
+.nav-item {
+  display: block;
+  width: calc(100% - 16px);
+  margin: 4px 8px;
+  padding: 10px 12px;
+  background-color: transparent;
+  color: #d1d5db;
+  border-radius: 6px;
+  text-align: left;
+  font-size: 14px;
+  transition: all 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-item:hover {
+  background-color: #374151;
+  color: white;
+}
+
+.nav-item.active {
+  background-color: #ef4444;
+  color: white;
+}
+
+.playlist-item {
+  padding-left: 24px;
+  font-size: 13px;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}

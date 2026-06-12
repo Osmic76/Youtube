@@ -1,0 +1,150 @@
+.video-detail {
+  flex: 1;
+  background-color: white;
+  border-left: 1px solid #e5e7eb;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-detail.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+.detail-header {
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+}
+
+.detail-header h2 {
+  color: #1f2937;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.detail-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.detail-section {
+  margin-bottom: 24px;
+}
+
+.detail-section h3 {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.description {
+  color: #4b5563;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.stat-item {
+  background-color: #f3f4f6;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+  min-height: 32px;
+  align-content: flex-start;
+}
+
+.tag {
+  background-color: #dbeafe;
+  color: #1e40af;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tag-remove {
+  background-color: transparent;
+  color: #1e40af;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.tag-remove:hover {
+  background-color: transparent;
+  opacity: 0.7;
+}
+
+.no-tags {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.add-tag {
+  display: flex;
+  gap: 8px;
+}
+
+.add-tag input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.add-tag button {
+  padding: 8px 16px;
+}
+
+.video-detail::-webkit-scrollbar {
+  width: 8px;
+}
+
+.video-detail::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.video-detail::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+.video-detail::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
