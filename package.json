@@ -17,7 +17,10 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "axios": "^1.6.0"
+    "react-chartjs-2": "^4.3.1",
+    "chart.js": "^4.4.0",
+    "axios": "^1.6.0",
+    "better-sqlite3": "^9.2.2"
   },
   "devDependencies": {
     "concurrently": "^8.2.0",
@@ -28,6 +31,7 @@
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@types/node": "^20.0.0",
+    "@types/better-sqlite3": "^7.6.8",
     "wait-on": "^7.0.1"
   },
   "build": {
@@ -37,7 +41,9 @@
       "dist/",
       "node_modules/",
       "public/",
-      "package.json"
+      "package.json",
+      "electron.js",
+      "preload.js"
     ],
     "directories": {
       "buildResources": "assets"
